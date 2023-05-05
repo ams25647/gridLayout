@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Project Grid Layout</title>
+    <style>
+		.container {
+			display: grid;
+			grid-template-areas:
+				"header header"
+				"nav main"
+				"footer footer";
+			grid-template-columns: 200px 1fr;
+			grid-template-rows: 50px 1fr 50px;
+			height: 100vh;
+		}
+		.header {
+			grid-area: header;
+			background-color: #ddd;
+			padding: 20px;
+			font-size: 30px;
+			text-align: center;
+		}
+		.nav {
+			grid-area: nav;
+			background-color: #bbb;
+			padding: 20px;
+			font-size: 20px;
+			text-align: center;
+		}
+		.main {
+			grid-area: main;
+			background-color: #eee;
+			padding: 20px;
+			font-size: 20px;
+			text-align: center;
+		}
+		.footer {
+			grid-area: footer;
+			background-color: #ddd;
+			padding: 20px;
+			font-size: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+    <div class="container">
+		<div class="header">This is part of the head grid template</div>
+		<div class="nav">A grid template for the nav</div>
+		<div class="main">This is a main grid template area</div>
+		<div class="footer">This is a footer grid template area</div>
+	</div>
+</body>
+</html>

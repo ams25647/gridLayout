@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Project Grid Layout</title>
+    <style>
+		.container {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 10px;
+		}
+		.item {
+			background-color: #ddd;
+			padding: 20px;
+			font-size: 30px;
+			text-align: center;
+		}
+		.item:nth-child(odd) {
+			background-color: #bbb;
+		}
+	</style>
+</head>
+<body>
+    <div class="container">
+		<div class="item">This</div>
+		<div class="item">Is</div>
+		<div class="item">A</div>
+		<div class="item">Line</div>
+		<div class="item">Based</div>
+		<div class="item">Placement</div>
+		<div class="item">Grid</div>
+		<div class="item">Layout</div>
+	</div>
+
+</body>
+</html>
